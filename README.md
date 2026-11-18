@@ -42,7 +42,7 @@ gamezone-gdl/
     ├── icons/        (íconos SVG violeta)  icons/blanco/ (íconos SVG blancos)
     └── img/
         ├── logo.svg, logo-oscuro.svg, favicon.svg
-        ├── productos/p01.jpg … p20.jpg   ← fotos de los productos
+        ├── productos/p01.webp … p20.webp   ← fotos de los productos
         └── slider/slide1.jpg … slide4.jpg ← fotos del slider
 ```
 

@@ -28,7 +28,7 @@
         <nav aria-label="Menú del panel"><ul class="menu-lateral"><li><a href="admin.html"><img class="icono" src="assets/icons/grafica.svg" alt="">Dashboard</a></li><li><a class="activo" href="admin-productos.html"><img class="icono" src="assets/icons/caja.svg" alt="">Productos</a></li><li><a href="admin-inventario.html"><img class="icono" src="assets/icons/editar.svg" alt="">Inventario y precios</a></li><li><a href="admin-alertas.html"><img class="icono" src="assets/icons/alerta.svg" alt="">Alertas de existencias</a></li><li><a href="index.html"><img class="icono" src="assets/icons/tienda.svg" alt="">Ver tienda</a></li><li><a href="login.html"><img class="icono" src="assets/icons/salir.svg" alt="">Cerrar sesión</a></li></ul></nav>
         <div>
           <form class="formulario" action="admin-productos.html" method="get">
-            <div class="campo"><label for="an">Título *</label><input id="an" name="titulo" required value="Marvel's Spider-Man 2"></div>
+            <div class="campo"><label for="an">Título *</label><input id="an" name="titulo" required value="Ciudad Arácnida"></div>
             <div class="campos-2">
               <div class="campo"><label for="ap">Plataforma *</label><select id="ap" name="plataforma" required><option>PS5</option><option>Xbox</option><option>Switch</option><option>PC / multiplataforma</option></select></div>
               <div class="campo"><label for="ag">Género *</label><select id="ag" name="genero" required><option>Acción / aventura</option><option>Deportes</option><option>Carreras</option><option>RPG</option><option>Accesorio</option></select></div>
@@ -37,7 +37,7 @@
               <div class="campo"><label for="apr">Precio (MXN) *</label><input id="apr" name="precio" type="number" min="1" step="1" required value="1099"></div>
               <div class="campo"><label for="ae">Existencias *</label><input id="ae" name="existencias" type="number" min="0" step="1" required value="7"></div>
             </div>
-            <div class="campo"><label for="ad">Descripción</label><textarea id="ad" name="descripcion" rows="4">Aventura de acción en mundo abierto con dos protagonistas.</textarea></div>
+            <div class="campo"><label for="ad">Descripción</label><textarea id="ad" name="descripcion" rows="4">Aventura de acción en mundo abierto.</textarea></div>
             <div class="campo"><label for="af">Imagen del producto</label><input id="af" name="imagen" type="file" accept="image/*"><small>JPG o PNG de al menos 800 × 800 px. Las fotografías deben ser de autoría propia.</small></div>
             <div style="display:flex;gap:.8rem;flex-wrap:wrap">
               <button class="btn btn--primario" type="submit">Guardar</button>
