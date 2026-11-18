@@ -46,35 +46,5 @@ gamezone-gdl/
         └── slider/slide1.jpg … slide4.jpg ← fotos del slider
 ```
 
-## Pendientes antes de entregar
-
-1. **Fotografías de autoría propia.** Las imágenes de `assets/img/productos/` y
-   `assets/img/slider/` son provisionales. Reemplázalas por sus fotos con **el mismo
-   nombre de archivo** (JPG). Recomendado: productos cuadrados de 800 × 800 px;
-   slider horizontal de 1600 × 700 px. Si fotografían otro producto, cambien el
-   nombre y precio en `tienda.html` (y en `index.html` si aparece en destacados).
-2. **Video embebido.** En `index.html` busquen `VIDEO_ID` y reemplácenlo por el
-   identificador del video de YouTube (lo que va después de `watch?v=`).
-
-## Cómo funcionan los elementos interactivos sin JavaScript
-
-| Elemento | Técnica CSS |
-|---|---|
-| Slider de imágenes | `input[type=radio]` + `:checked ~` + `transform` |
-| Filtros de la tienda | `input[type=radio]` + selector `:has()` + botón `type="reset"` |
-| Chat | `input[type=checkbox]` que abre la ventana; respuestas rápidas con `:has()` |
-| Menú hamburguesa | `input[type=checkbox]` + `@media` |
-| Valoración con estrellas | Radios en `row-reverse` con fondos SVG |
-| Preguntas frecuentes | `<details>` / `<summary>` |
-| Formularios | Validación nativa de HTML5 (`required`, `type="email"`, `pattern`) |
-
-## Publicar en GitHub Pages
-
-1. Crear un repositorio público en GitHub (por ejemplo `gamezone-gdl`).
-2. *Add file → Upload files* y arrastrar **el contenido** de esta carpeta
-   (que `index.html` quede en la raíz del repositorio). *Commit changes*.
-3. *Settings → Pages → Build and deployment*: Source **Deploy from a branch**,
-   Branch **main** / **(root)** → *Save*.
-4. En 1–2 minutos el sitio queda en `https://USUARIO.github.io/gamezone-gdl/`.
 
 *Empresa, dirección, teléfonos, testimonios y pedidos son ficticios, con fines académicos.*
