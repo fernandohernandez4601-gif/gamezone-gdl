@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio | GameZone GDL</title>
+  <meta name="description" content="Tienda de videojuegos, consolas y accesorios en Guadalajara.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <p class="barra-aviso">Envío gratis en compras mayores a $999 en la ZMG · Aparta en línea y recoge en tienda</p>
+  <header class="encabezado">
+    <div class="contenedor encabezado__fila">
+      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="GameZone GDL — inicio" width="260" height="64"></a>
+      <input class="menu-check" type="checkbox" id="menu">
+      <label class="menu-boton" for="menu" aria-label="Abrir menú">
+        <img class="icono abrir" src="assets/icons/blanco/menu.svg" alt=""><img class="icono cerrar" src="assets/icons/blanco/cerrar.svg" alt="">
+      </label>
+      <nav class="nav" aria-label="Menú principal"><a href="index.html" class="activo" aria-current="page">Inicio</a><a href="tienda.html">Tienda</a><a href="nosotros.html">Nosotros</a><a href="ubicacion.html">Ubicación</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="contacto.html">Contacto</a></nav>
+      <div class="acciones">
+        <a href="tienda.html#buscar" aria-label="Buscar"><img class="icono" src="assets/icons/blanco/buscar.svg" alt=""></a>
+        <a href="login.html" aria-label="Mi cuenta"><img class="icono" src="assets/icons/blanco/usuario.svg" alt=""></a>
+        <a href="carrito.html" aria-label="Carrito, 4 productos, subtotal $11,446"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""><span class="contador">4</span></a>
+        <span class="subtotal-cab">$11,446</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="slider" aria-label="Productos y servicios destacados">
+      <input type="radio" name="slide" id="s1" checked><input type="radio" name="slide" id="s2"><input type="radio" name="slide" id="s3"><input type="radio" name="slide" id="s4">
+      <div class="slider__pista">
+        <div class="slide">
+          <img src="assets/img/slider/slide1.jpg" alt="Los estrenos más esperados, aquí primero" width="1600" height="700">
+          <div class="slide__texto">
+            <h2>Los estrenos más esperados, aquí primero</h2><p>Aparta en línea tus lanzamientos y recógelos en tienda el día de salida.</p>
+            <a class="btn btn--ambar" href="tienda.html">Ver novedades</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/img/slider/slide2.jpg" alt="Consolas nuevas y seminuevas con garantía" width="1600" height="700" loading="lazy">
+          <div class="slide__texto">
+            <h2>Consolas nuevas y seminuevas con garantía</h2><p>Revisamos y probamos cada equipo usado antes de venderlo.</p>
+            <a class="btn btn--ambar" href="tienda.html">Ver consolas</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/img/slider/slide3.jpg" alt="Arma tu setup gamer" width="1600" height="700" loading="lazy">
+          <div class="slide__texto">
+            <h2>Arma tu setup gamer</h2><p>Audífonos, controles, teclados y más accesorios para todas las plataformas.</p>
+            <a class="btn btn--ambar" href="tienda.html">Ver accesorios</a>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="assets/img/slider/slide4.jpg" alt="Visítanos en Guadalajara" width="1600" height="700" loading="lazy">
+          <div class="slide__texto">
+            <h2>Visítanos en Guadalajara</h2><p>Prueba los juegos en nuestra zona de demostración y recibe asesoría experta.</p>
+            <a class="btn btn--ambar" href="ubicacion.html">Cómo llegar</a>
+          </div>
+        </div>
+      </div>
+      <div class="slider__flechas"><label class="ant f1" for="s4" aria-label="Anterior"><img class="icono" src="assets/icons/blanco/flecha-izq.svg" alt=""></label><label class="sig f1" for="s2" aria-label="Siguiente"><img class="icono" src="assets/icons/blanco/flecha-der.svg" alt=""></label><label class="ant f2" for="s1" aria-label="Anterior"><img class="icono" src="assets/icons/blanco/flecha-izq.svg" alt=""></label><label class="sig f2" for="s3" aria-label="Siguiente"><img class="icono" src="assets/icons/blanco/flecha-der.svg" alt=""></label><label class="ant f3" for="s2" aria-label="Anterior"><img class="icono" src="assets/icons/blanco/flecha-izq.svg" alt=""></label><label class="sig f3" for="s4" aria-label="Siguiente"><img class="icono" src="assets/icons/blanco/flecha-der.svg" alt=""></label><label class="ant f4" for="s3" aria-label="Anterior"><img class="icono" src="assets/icons/blanco/flecha-izq.svg" alt=""></label><label class="sig f4" for="s1" aria-label="Siguiente"><img class="icono" src="assets/icons/blanco/flecha-der.svg" alt=""></label></div>
+      <div class="slider__puntos"><label for="s1" aria-label="Ir a la imagen 1"></label><label for="s2" aria-label="Ir a la imagen 2"></label><label for="s3" aria-label="Ir a la imagen 3"></label><label for="s4" aria-label="Ir a la imagen 4"></label></div>
+    </section>
+
+    <div class="contenedor">
+      <section class="beneficios" aria-label="Beneficios">
+        <div class="beneficio"><img class="icono icono--grande" src="assets/icons/escudo.svg" alt=""><div><strong>100 % originales</strong><span>Productos con garantía</span></div></div>
+        <div class="beneficio"><img class="icono icono--grande" src="assets/icons/camion.svg" alt=""><div><strong>Envíos en la ZMG</strong><span>24 a 48 horas</span></div></div>
+        <div class="beneficio"><img class="icono icono--grande" src="assets/icons/tienda.svg" alt=""><div><strong>Aparta y recoge</strong><span>Sin costo en tienda</span></div></div>
+        <div class="beneficio"><img class="icono icono--grande" src="assets/icons/candado.svg" alt=""><div><strong>Compra segura</strong><span>Datos protegidos</span></div></div>
+      </section>
+    </div>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <span class="etiqueta">Lo más vendido</span>
+        <h2>Productos destacados</h2>
+        <p class="subtitulo">Consolas, videojuegos y accesorios favoritos de nuestra comunidad gamer en Guadalajara.</p>
+        <div class="rejilla">
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="consolas" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p01.jpg" alt="Consola PlayStation 5 Slim 1 TB" loading="lazy" width="600" height="600">
+            <span class="insignia">Oferta</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">Consola PlayStation 5 Slim 1 TB</h3>
+            <div class="estrellas" aria-label="Calificación 4.8 de 5"><div class="estrellas__barra"><span style="width:96%"></span></div><span>4.8 (124)</span></div>
+            <p class="tarjeta__precio">$9,999 <small><del>$10,999</del></small></p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p08.jpg" alt="Marvel&#x27;s Spider-Man 2" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">Marvel&#x27;s Spider-Man 2</h3>
+            <div class="estrellas" aria-label="Calificación 4.9 de 5"><div class="estrellas__barra"><span style="width:98%"></span></div><span>4.9 (211)</span></div>
+            <p class="tarjeta__precio">$1,099</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p10.jpg" alt="Zelda: Tears of the Kingdom" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Zelda: Tears of the Kingdom</h3>
+            <div class="estrellas" aria-label="Calificación 5.0 de 5"><div class="estrellas__barra"><span style="width:100%"></span></div><span>5.0 (188)</span></div>
+            <p class="tarjeta__precio">$1,399</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="consolas" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p03.jpg" alt="Consola Nintendo Switch OLED" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Consola Nintendo Switch OLED</h3>
+            <div class="estrellas" aria-label="Calificación 4.9 de 5"><div class="estrellas__barra"><span style="width:98%"></span></div><span>4.9 (156)</span></div>
+            <p class="tarjeta__precio">$7,299</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="multi" data-categoria="accesorios" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p14.jpg" alt="Audífonos gamer inalámbricos" loading="lazy" width="600" height="600">
+            <span class="insignia">Oferta</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Multiplataforma · Nuevo</span>
+            <h3 class="tarjeta__nombre">Audífonos gamer inalámbricos</h3>
+            <div class="estrellas" aria-label="Calificación 4.4 de 5"><div class="estrellas__barra"><span style="width:88%"></span></div><span>4.4 (77)</span></div>
+            <p class="tarjeta__precio">$1,899 <small><del>$2,199</del></small></p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p09.jpg" alt="Mario Kart 8 Deluxe" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Mario Kart 8 Deluxe</h3>
+            <div class="estrellas" aria-label="Calificación 4.9 de 5"><div class="estrellas__barra"><span style="width:98%"></span></div><span>4.9 (302)</span></div>
+            <p class="tarjeta__precio">$1,149</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="accesorios" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p04.jpg" alt="Control inalámbrico DualSense blanco" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">Control inalámbrico DualSense blanco</h3>
+            <div class="estrellas" aria-label="Calificación 4.7 de 5"><div class="estrellas__barra"><span style="width:94%"></span></div><span>4.7 (98)</span></div>
+            <p class="tarjeta__precio">$1,499</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="juegos" data-precio="bajo" data-estado="usado">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p20.jpg" alt="The Last of Us Part I" loading="lazy" width="600" height="600">
+            <span class="insignia insignia--usado">Seminuevo</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Usado</span>
+            <h3 class="tarjeta__nombre">The Last of Us Part I</h3>
+            <div class="estrellas" aria-label="Calificación 4.8 de 5"><div class="estrellas__barra"><span style="width:96%"></span></div><span>4.8 (34)</span></div>
+            <p class="tarjeta__precio">$649</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        </div>
+        <p style="text-align:center;margin-top:2rem"><a class="btn btn--primario" href="tienda.html">Ver los 20 productos de la tienda</a></p>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca">
+      <div class="contenedor dos-columnas">
+        <div>
+          <span class="etiqueta">Conócenos</span>
+          <h2>Más que una tienda: una comunidad gamer</h2>
+          <p>Desde hace más de tres años, GameZone GDL acerca a los jugadores de Guadalajara los mejores títulos, consolas y accesorios, nuevos y seminuevos. Ahora también puedes consultar existencias, apartar y comprar en línea.</p>
+          <ul class="lista-check" style="margin:1rem 0 1.4rem">
+            <li><img class="icono" src="assets/icons/check.svg" alt="">Existencias actualizadas en tiempo real</li>
+            <li><img class="icono" src="assets/icons/check.svg" alt="">Asesoría de compatibilidad por plataforma</li>
+            <li><img class="icono" src="assets/icons/check.svg" alt="">Seminuevos revisados con garantía de 30 días</li>
+          </ul>
+          <a class="btn btn--borde" href="nosotros.html">¿Quiénes somos?</a>
+        </div>
+        <div>
+          <!-- Video embebido: reemplazar VIDEO_ID por el identificador del video de YouTube del equipo -->
+          <div class="video">
+            <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Conoce GameZone GDL"
+              allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+        <span class="etiqueta">Opiniones</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p class="subtitulo">Calificación promedio de nuestro servicio: 4.8 de 5 con más de 1,200 reseñas.</p>
+        <div class="tarjetas-info">
+          <article class="resena">
+            <div class="resena__cabeza">
+              <div class="resena__autor"><span class="avatar">A</span><div><strong>Ana R.</strong><small>Zapopan</small></div></div>
+              <div class="estrellas" aria-label="Calificación 5.0 de 5"><div class="estrellas__barra"><span style="width:100%"></span></div><span>5.0</span></div>
+            </div>
+            <p>Aparté Zelda en línea y lo recogí el mismo día. Me atendieron súper bien y me explicaron todo.</p>
+          </article>
+          <article class="resena">
+            <div class="resena__cabeza">
+              <div class="resena__autor"><span class="avatar">L</span><div><strong>Luis M.</strong><small>Tlaquepaque</small></div></div>
+              <div class="estrellas" aria-label="Calificación 5.0 de 5"><div class="estrellas__barra"><span style="width:100%"></span></div><span>5.0</span></div>
+            </div>
+            <p>Compré un control seminuevo y llegó como nuevo. Se nota que revisan todo antes de venderlo.</p>
+          </article>
+          <article class="resena">
+            <div class="resena__cabeza">
+              <div class="resena__autor"><span class="avatar">K</span><div><strong>Karla P.</strong><small>Guadalajara</small></div></div>
+              <div class="estrellas" aria-label="Calificación 4.0 de 5"><div class="estrellas__barra"><span style="width:80%"></span></div><span>4.0</span></div>
+            </div>
+            <p>Buenos precios y el chat me resolvió dudas sobre compatibilidad al instante.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion seccion--blanca">
+      <div class="contenedor" style="text-align:center">
+        <span class="etiqueta">Síguenos</span>
+        <h2>Únete a la comunidad GameZone</h2>
+        <p class="subtitulo" style="margin-inline:auto">Torneos, lanzamientos y promociones exclusivas en nuestras redes sociales.</p>
+        <div style="display:flex;justify-content:center"><div class="redes redes--claras"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Facebook"><img class="icono" src="assets/icons/red-facebook.svg" alt=""> Facebook</a><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Instagram"><img class="icono" src="assets/icons/red-instagram.svg" alt=""> Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en TikTok"><img class="icono" src="assets/icons/red-tiktok.svg" alt=""> TikTok</a><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en YouTube"><img class="icono" src="assets/icons/red-youtube.svg" alt=""> YouTube</a><a href="https://wa.me/523312345678" target="_blank" rel="noopener" aria-label="GameZone GDL en WhatsApp"><img class="icono" src="assets/icons/red-whatsapp.svg" alt=""> WhatsApp</a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__rejilla">
+        <div>
+          <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="GameZone GDL" width="260" height="64"></a>
+          <p style="font-size:.92rem">Tu tienda de videojuegos, consolas y accesorios en Guadalajara. Nuevos y seminuevos, con garantía.</p>
+          <div style="margin-top:1rem"><div class="redes"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Facebook"><img class="icono" src="assets/icons/blanco/red-facebook.svg" alt=""> Facebook</a><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Instagram"><img class="icono" src="assets/icons/blanco/red-instagram.svg" alt=""> Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en TikTok"><img class="icono" src="assets/icons/blanco/red-tiktok.svg" alt=""> TikTok</a><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en YouTube"><img class="icono" src="assets/icons/blanco/red-youtube.svg" alt=""> YouTube</a><a href="https://wa.me/523312345678" target="_blank" rel="noopener" aria-label="GameZone GDL en WhatsApp"><img class="icono" src="assets/icons/blanco/red-whatsapp.svg" alt=""> WhatsApp</a></div></div>
+        </div>
+        <div>
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="tienda.html">Catálogo completo</a></li>
+            <li><a href="tienda.html">Consolas</a></li>
+            <li><a href="tienda.html">Videojuegos</a></li>
+            <li><a href="tienda.html">Accesorios</a></li>
+            <li><a href="carrito.html">Mi carrito</a></li>
+            <li><a href="login.html">Mi cuenta</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+            <li><a href="nosotros.html#mision">Misión y visión</a></li>
+            <li><a href="nosotros.html#politicas">Políticas de calidad</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="aviso-privacidad.html">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p class="pie__dato"><img src="assets/icons/blanco/ubicacion.svg" alt="">Av. Manuel Ávila Camacho 2150, local 24, Guadalajara, Jal.</p>
+          <p class="pie__dato"><img src="assets/icons/blanco/telefono.svg" alt="">33 1234 5678</p>
+          <p class="pie__dato"><img src="assets/icons/blanco/correo.svg" alt="">contacto@gamezonegdl.mx</p>
+          <form class="boletin" action="gracias.html" method="get">
+            <label class="solo-lectores" for="boletin">Correo para el boletín</label>
+            <input id="boletin" type="email" name="boletin" placeholder="Tu correo" required>
+            <button class="btn btn--ambar btn--chico" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <span>© 2026 GameZone GDL. Prototipo académico — Proyecto III, Equipo X (UDG+).</span>
+        <span><a href="aviso-privacidad.html">Aviso de privacidad</a> · <a href="preguntas-frecuentes.html">Ayuda</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- Chat de atención (simulado solo con HTML y CSS) -->
+  <div class="chat">
+    <input class="chat-check" type="checkbox" id="chat">
+    <label class="chat-boton" for="chat" aria-label="Abrir chat de atención">
+      <img class="icono abrir-chat" src="assets/icons/blanco/chat.svg" alt=""><img class="icono cerrar-chat" src="assets/icons/blanco/cerrar.svg" alt="">
+    </label>
+    <section class="chat-ventana" aria-label="Chat con GameZone GDL">
+      <div class="chat-cabeza">
+        <span class="chat-avatar"><img class="icono" src="assets/icons/blanco/control.svg" alt=""></span>
+        <div><strong>Asistente GameZone</strong><small>En línea</small></div>
+      </div>
+      <div class="chat-mensajes">
+        <p class="msj msj--bot">¡Hola! 👋 Soy el asistente de GameZone GDL. ¿En qué te puedo ayudar?</p>
+        <p class="msj msj--yo q1">¿Puedo apartar un juego?</p>
+        <p class="msj msj--bot msj--resp q1">¡Claro! Agrégalo al carrito y elige «Recoger en tienda». Te lo guardamos 48 horas.</p>
+        <p class="msj msj--yo q2">¿Cuál es su horario?</p>
+        <p class="msj msj--bot msj--resp q2">Lunes a sábado de 11:00 a 21:00 y domingo de 12:00 a 19:00.</p>
+        <p class="msj msj--yo q3">¿Hacen envíos?</p>
+        <p class="msj msj--bot msj--resp q3">Sí, a toda la ZMG en 24 a 48 horas. Es gratis en compras mayores a $999.</p>
+        <p class="msj msj--yo q4">Quiero hablar con un asesor</p>
+        <p class="msj msj--bot msj--resp q4">Con gusto. Un asesor te atenderá en breve o escríbenos por <a href="https://wa.me/523312345678" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      </div>
+      <div class="chat-opciones">
+        <input type="checkbox" id="q1"><label for="q1">Apartados</label>
+        <input type="checkbox" id="q2"><label for="q2">Horario</label>
+        <input type="checkbox" id="q3"><label for="q3">Envíos</label>
+        <input type="checkbox" id="q4"><label for="q4">Asesor</label>
+      </div>
+      <div class="chat-escribir">
+        <label class="solo-lectores" for="chat-texto">Escribe tu mensaje</label>
+        <input id="chat-texto" type="text" placeholder="Escribe tu mensaje…">
+        <button type="button" aria-label="Enviar mensaje"><img class="icono" src="assets/icons/blanco/enviar.svg" alt=""></button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

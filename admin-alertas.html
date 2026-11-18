@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alertas de existencias | GameZone GDL</title>
+  <meta name="description" content="Productos con existencias bajas.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header class="encabezado encabezado--admin">
+    <div class="contenedor encabezado__fila">
+      <a class="logo" href="admin.html"><img src="assets/img/logo.svg" alt="GameZone GDL — panel administrativo" width="260" height="64"></a>
+      <span class="etiqueta" style="margin:0">Panel administrativo</span>
+      <div class="acciones" style="margin-left:auto;color:#e5e1ff;font-weight:600;font-size:.9rem;gap:.8rem">
+        <span>Gerente</span>
+        <a href="login.html" aria-label="Cerrar sesión" title="Cerrar sesión"><img class="icono" src="assets/icons/blanco/salir.svg" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="portada-pagina">
+      <div class="contenedor"><p class="migas">Panel administrativo / Alertas</p><h1>Alertas de existencias bajas</h1><p>Productos con 2 unidades o menos (RF-12).</p></div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor panel-cuenta">
+        <nav aria-label="Menú del panel"><ul class="menu-lateral"><li><a href="admin.html"><img class="icono" src="assets/icons/grafica.svg" alt="">Dashboard</a></li><li><a href="admin-productos.html"><img class="icono" src="assets/icons/caja.svg" alt="">Productos</a></li><li><a href="admin-inventario.html"><img class="icono" src="assets/icons/editar.svg" alt="">Inventario y precios</a></li><li><a class="activo" href="admin-alertas.html"><img class="icono" src="assets/icons/alerta.svg" alt="">Alertas de existencias</a></li><li><a href="index.html"><img class="icono" src="assets/icons/tienda.svg" alt="">Ver tienda</a></li><li><a href="login.html"><img class="icono" src="assets/icons/salir.svg" alt="">Cerrar sesión</a></li></ul></nav>
+        <div>
+          <div class="aviso"><img class="icono" src="assets/icons/alerta.svg" alt=""><span><strong>4 productos</strong> requieren reabastecimiento; 1 ya están agotados y no pueden venderse en línea.</span></div>
+          <table class="tabla tabla--responsiva">
+            <thead><tr><th><span class="solo-lectores">Nivel</span></th><th>Producto</th><th>Plataforma</th><th>Existencias</th><th>Estado</th><th>Acción</th></tr></thead>
+            <tbody>
+              <tr><td data-etiqueta="Nivel"><img class="icono" src="assets/icons/alerta.svg" alt="" style="filter:hue-rotate(90deg) saturate(3)"></td>
+              <td data-etiqueta="Producto"><strong>Joy-Con (par) neón</strong></td><td data-etiqueta="Plataforma">Switch</td><td data-etiqueta="Existencias">0</td><td data-etiqueta="Estado"><span class="estado estado--bajo">Agotado</span></td>
+              <td data-etiqueta="Acción"><a class="btn btn--primario btn--chico" href="admin-inventario.html">Reabastecer</a></td></tr>
+              <tr><td data-etiqueta="Nivel"><img class="icono" src="assets/icons/alerta.svg" alt="" style="filter:none"></td>
+              <td data-etiqueta="Producto"><strong>The Last of Us Part I</strong></td><td data-etiqueta="Plataforma">PS5</td><td data-etiqueta="Existencias">1</td><td data-etiqueta="Estado"><span class="estado estado--proceso">Bajo</span></td>
+              <td data-etiqueta="Acción"><a class="btn btn--primario btn--chico" href="admin-inventario.html">Reabastecer</a></td></tr>
+              <tr><td data-etiqueta="Nivel"><img class="icono" src="assets/icons/alerta.svg" alt="" style="filter:none"></td>
+              <td data-etiqueta="Producto"><strong>Halo Infinite</strong></td><td data-etiqueta="Plataforma">Xbox</td><td data-etiqueta="Existencias">2</td><td data-etiqueta="Estado"><span class="estado estado--proceso">Bajo</span></td>
+              <td data-etiqueta="Acción"><a class="btn btn--primario btn--chico" href="admin-inventario.html">Reabastecer</a></td></tr>
+              <tr><td data-etiqueta="Nivel"><img class="icono" src="assets/icons/alerta.svg" alt="" style="filter:none"></td>
+              <td data-etiqueta="Producto"><strong>Base de carga doble para DualSense</strong></td><td data-etiqueta="Plataforma">PS5</td><td data-etiqueta="Existencias">2</td><td data-etiqueta="Estado"><span class="estado estado--proceso">Bajo</span></td>
+              <td data-etiqueta="Acción"><a class="btn btn--primario btn--chico" href="admin-inventario.html">Reabastecer</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de producto | GameZone GDL</title>
+  <meta name="description" content="Alta y edición de productos.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header class="encabezado encabezado--admin">
+    <div class="contenedor encabezado__fila">
+      <a class="logo" href="admin.html"><img src="assets/img/logo.svg" alt="GameZone GDL — panel administrativo" width="260" height="64"></a>
+      <span class="etiqueta" style="margin:0">Panel administrativo</span>
+      <div class="acciones" style="margin-left:auto;color:#e5e1ff;font-weight:600;font-size:.9rem;gap:.8rem">
+        <span>Gerente</span>
+        <a href="login.html" aria-label="Cerrar sesión" title="Cerrar sesión"><img class="icono" src="assets/icons/blanco/salir.svg" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="portada-pagina">
+      <div class="contenedor"><p class="migas">Panel administrativo / <a href="admin-productos.html">Productos</a> / Formulario</p><h1>Formulario de producto</h1><p>Registra un producto nuevo o edita uno existente. Los campos con * son obligatorios.</p></div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor panel-cuenta">
+        <nav aria-label="Menú del panel"><ul class="menu-lateral"><li><a href="admin.html"><img class="icono" src="assets/icons/grafica.svg" alt="">Dashboard</a></li><li><a class="activo" href="admin-productos.html"><img class="icono" src="assets/icons/caja.svg" alt="">Productos</a></li><li><a href="admin-inventario.html"><img class="icono" src="assets/icons/editar.svg" alt="">Inventario y precios</a></li><li><a href="admin-alertas.html"><img class="icono" src="assets/icons/alerta.svg" alt="">Alertas de existencias</a></li><li><a href="index.html"><img class="icono" src="assets/icons/tienda.svg" alt="">Ver tienda</a></li><li><a href="login.html"><img class="icono" src="assets/icons/salir.svg" alt="">Cerrar sesión</a></li></ul></nav>
+        <div>
+          <form class="formulario" action="admin-productos.html" method="get">
+            <div class="campo"><label for="an">Título *</label><input id="an" name="titulo" required value="Marvel's Spider-Man 2"></div>
+            <div class="campos-2">
+              <div class="campo"><label for="ap">Plataforma *</label><select id="ap" name="plataforma" required><option>PS5</option><option>Xbox</option><option>Switch</option><option>PC / multiplataforma</option></select></div>
+              <div class="campo"><label for="ag">Género *</label><select id="ag" name="genero" required><option>Acción / aventura</option><option>Deportes</option><option>Carreras</option><option>RPG</option><option>Accesorio</option></select></div>
+              <div class="campo"><label for="aesrb">Clasificación ESRB *</label><select id="aesrb" name="esrb" required><option>E — Todos</option><option>E10+</option><option selected>T — Adolescentes</option><option>M — Maduro 17+</option><option>No aplica</option></select></div>
+              <div class="campo"><label for="aes">Estado *</label><select id="aes" name="estado"><option>Nuevo</option><option>Seminuevo</option></select></div>
+              <div class="campo"><label for="apr">Precio (MXN) *</label><input id="apr" name="precio" type="number" min="1" step="1" required value="1099"></div>
+              <div class="campo"><label for="ae">Existencias *</label><input id="ae" name="existencias" type="number" min="0" step="1" required value="7"></div>
+            </div>
+            <div class="campo"><label for="ad">Descripción</label><textarea id="ad" name="descripcion" rows="4">Aventura de acción en mundo abierto con dos protagonistas.</textarea></div>
+            <div class="campo"><label for="af">Imagen del producto</label><input id="af" name="imagen" type="file" accept="image/*"><small>JPG o PNG de al menos 800 × 800 px. Las fotografías deben ser de autoría propia.</small></div>
+            <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+              <button class="btn btn--primario" type="submit">Guardar</button>
+              <a class="btn btn--borde" href="admin-productos.html">Cancelar</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

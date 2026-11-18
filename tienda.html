@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda | GameZone GDL</title>
+  <meta name="description" content="Catálogo de videojuegos, consolas y accesorios de GameZone GDL.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <p class="barra-aviso">Envío gratis en compras mayores a $999 en la ZMG · Aparta en línea y recoge en tienda</p>
+  <header class="encabezado">
+    <div class="contenedor encabezado__fila">
+      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="GameZone GDL — inicio" width="260" height="64"></a>
+      <input class="menu-check" type="checkbox" id="menu">
+      <label class="menu-boton" for="menu" aria-label="Abrir menú">
+        <img class="icono abrir" src="assets/icons/blanco/menu.svg" alt=""><img class="icono cerrar" src="assets/icons/blanco/cerrar.svg" alt="">
+      </label>
+      <nav class="nav" aria-label="Menú principal"><a href="index.html">Inicio</a><a href="tienda.html" class="activo" aria-current="page">Tienda</a><a href="nosotros.html">Nosotros</a><a href="ubicacion.html">Ubicación</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="contacto.html">Contacto</a></nav>
+      <div class="acciones">
+        <a href="tienda.html#buscar" aria-label="Buscar"><img class="icono" src="assets/icons/blanco/buscar.svg" alt=""></a>
+        <a href="login.html" aria-label="Mi cuenta"><img class="icono" src="assets/icons/blanco/usuario.svg" alt=""></a>
+        <a href="carrito.html" aria-label="Carrito, 4 productos, subtotal $11,446"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""><span class="contador">4</span></a>
+        <span class="subtotal-cab">$11,446</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="portada-pagina">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Tienda</p>
+        <h1>Tienda en línea</h1>
+        <p>Explora nuestro catálogo de 20 productos. Filtra por plataforma y categoría.</p>
+      </div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor tienda">
+        <form class="filtros" aria-label="Filtros" action="tienda.html">
+          <fieldset>
+            <legend><h3>Plataforma</h3></legend>
+            <input type="radio" name="plat" id="f-todos" checked><label class="filtro" for="f-todos">Todas<small>20</small></label>
+            <input type="radio" name="plat" id="f-ps5"><label class="filtro" for="f-ps5">PlayStation 5<small>6</small></label>
+            <input type="radio" name="plat" id="f-xbox"><label class="filtro" for="f-xbox">Xbox<small>4</small></label>
+            <input type="radio" name="plat" id="f-switch"><label class="filtro" for="f-switch">Nintendo Switch<small>6</small></label>
+            <input type="radio" name="plat" id="f-multi"><label class="filtro" for="f-multi">PC y multiplataforma<small>4</small></label>
+          </fieldset>
+          <fieldset>
+            <legend><h3>Categoría</h3></legend>
+            <input type="radio" name="cat" id="c-todas" checked><label class="filtro" for="c-todas">Todas<small>20</small></label>
+            <input type="radio" name="cat" id="c-consolas"><label class="filtro" for="c-consolas">Consolas<small>3</small></label>
+            <input type="radio" name="cat" id="c-juegos"><label class="filtro" for="c-juegos">Videojuegos<small>8</small></label>
+            <input type="radio" name="cat" id="c-accesorios"><label class="filtro" for="c-accesorios">Accesorios<small>8</small></label>
+            <input type="radio" name="cat" id="c-coleccion"><label class="filtro" for="c-coleccion">Coleccionables<small>1</small></label>
+          </fieldset>
+          <fieldset>
+            <legend><h3>Precio</h3></legend>
+            <input type="radio" name="precio" id="pr-todos" checked><label class="filtro" for="pr-todos">Todos<small>20</small></label>
+            <input type="radio" name="precio" id="pr-bajo"><label class="filtro" for="pr-bajo">Hasta $700<small>6</small></label>
+            <input type="radio" name="precio" id="pr-medio"><label class="filtro" for="pr-medio">$701 a $1,500<small>9</small></label>
+            <input type="radio" name="precio" id="pr-alto"><label class="filtro" for="pr-alto">Más de $1,500<small>5</small></label>
+          </fieldset>
+          <fieldset>
+            <legend><h3>Estado</h3></legend>
+            <input type="radio" name="estado" id="es-todos" checked><label class="filtro" for="es-todos">Todos<small>20</small></label>
+            <input type="radio" name="estado" id="es-nuevo"><label class="filtro" for="es-nuevo">Nuevo<small>18</small></label>
+            <input type="radio" name="estado" id="es-usado"><label class="filtro" for="es-usado">Seminuevo<small>2</small></label>
+          </fieldset>
+          <button class="btn btn--borde btn--bloque btn--chico" type="reset">Limpiar filtros</button>
+          <div class="aviso"><img class="icono" src="assets/icons/tienda.svg" alt=""><span>¿No encuentras un título? Pregúntanos por el chat y lo conseguimos.</span></div>
+        </form>
+        <div>
+          <div class="tienda__barra">
+            <form class="buscador" id="buscar" action="tienda.html" role="search">
+              <img class="icono" src="assets/icons/buscar.svg" alt="">
+              <label class="solo-lectores" for="q">Buscar productos</label>
+              <input id="q" type="search" name="q" placeholder="Buscar por título, consola o accesorio…">
+            </form>
+            <label class="solo-lectores" for="orden">Ordenar</label>
+            <select id="orden" name="orden">
+              <option>Más vendidos</option><option>Menor precio</option><option>Mayor precio</option><option>Mejor valorados</option>
+            </select>
+          </div>
+          <p class="resultado">Mostrando el catálogo de 20 productos</p>
+          <div class="rejilla" style="margin-top:1rem">
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="consolas" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p01.jpg" alt="Consola PlayStation 5 Slim 1 TB" loading="lazy" width="600" height="600">
+            <span class="insignia">Oferta</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">Consola PlayStation 5 Slim 1 TB</h3>
+            <div class="estrellas" aria-label="Calificación 4.8 de 5"><div class="estrellas__barra"><span style="width:96%"></span></div><span>4.8 (124)</span></div>
+            <p class="tarjeta__precio">$9,999 <small><del>$10,999</del></small></p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="xbox" data-categoria="consolas" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p02.jpg" alt="Consola Xbox Series S 512 GB" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Xbox · Nuevo</span>
+            <h3 class="tarjeta__nombre">Consola Xbox Series S 512 GB</h3>
+            <div class="estrellas" aria-label="Calificación 4.6 de 5"><div class="estrellas__barra"><span style="width:92%"></span></div><span>4.6 (87)</span></div>
+            <p class="tarjeta__precio">$6,499</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="consolas" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p03.jpg" alt="Consola Nintendo Switch OLED" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Consola Nintendo Switch OLED</h3>
+            <div class="estrellas" aria-label="Calificación 4.9 de 5"><div class="estrellas__barra"><span style="width:98%"></span></div><span>4.9 (156)</span></div>
+            <p class="tarjeta__precio">$7,299</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="accesorios" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p04.jpg" alt="Control inalámbrico DualSense blanco" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">Control inalámbrico DualSense blanco</h3>
+            <div class="estrellas" aria-label="Calificación 4.7 de 5"><div class="estrellas__barra"><span style="width:94%"></span></div><span>4.7 (98)</span></div>
+            <p class="tarjeta__precio">$1,499</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="xbox" data-categoria="accesorios" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p05.jpg" alt="Control inalámbrico para Xbox" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Xbox · Nuevo</span>
+            <h3 class="tarjeta__nombre">Control inalámbrico para Xbox</h3>
+            <div class="estrellas" aria-label="Calificación 4.5 de 5"><div class="estrellas__barra"><span style="width:90%"></span></div><span>4.5 (64)</span></div>
+            <p class="tarjeta__precio">$1,299</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="accesorios" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p06.jpg" alt="Joy-Con (par) neón" loading="lazy" width="600" height="600">
+            <span class="insignia insignia--agotado">Agotado</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Joy-Con (par) neón</h3>
+            <div class="estrellas" aria-label="Calificación 4.2 de 5"><div class="estrellas__barra"><span style="width:84%"></span></div><span>4.2 (41)</span></div>
+            <p class="tarjeta__precio">$1,599</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <span class="btn btn--borde" aria-disabled="true" style="opacity:.5;cursor:not-allowed">Agotado</span>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p07.jpg" alt="EA Sports FC 25" loading="lazy" width="600" height="600">
+            <span class="insignia">Oferta</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">EA Sports FC 25</h3>
+            <div class="estrellas" aria-label="Calificación 4.3 de 5"><div class="estrellas__barra"><span style="width:86%"></span></div><span>4.3 (73)</span></div>
+            <p class="tarjeta__precio">$1,199 <small><del>$1,399</del></small></p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p08.jpg" alt="Marvel&#x27;s Spider-Man 2" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">Marvel&#x27;s Spider-Man 2</h3>
+            <div class="estrellas" aria-label="Calificación 4.9 de 5"><div class="estrellas__barra"><span style="width:98%"></span></div><span>4.9 (211)</span></div>
+            <p class="tarjeta__precio">$1,099</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p09.jpg" alt="Mario Kart 8 Deluxe" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Mario Kart 8 Deluxe</h3>
+            <div class="estrellas" aria-label="Calificación 4.9 de 5"><div class="estrellas__barra"><span style="width:98%"></span></div><span>4.9 (302)</span></div>
+            <p class="tarjeta__precio">$1,149</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p10.jpg" alt="Zelda: Tears of the Kingdom" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Zelda: Tears of the Kingdom</h3>
+            <div class="estrellas" aria-label="Calificación 5.0 de 5"><div class="estrellas__barra"><span style="width:100%"></span></div><span>5.0 (188)</span></div>
+            <p class="tarjeta__precio">$1,399</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="xbox" data-categoria="juegos" data-precio="bajo" data-estado="usado">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p11.jpg" alt="Halo Infinite" loading="lazy" width="600" height="600">
+            <span class="insignia insignia--usado">Seminuevo</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Xbox · Usado</span>
+            <h3 class="tarjeta__nombre">Halo Infinite</h3>
+            <div class="estrellas" aria-label="Calificación 4.1 de 5"><div class="estrellas__barra"><span style="width:82%"></span></div><span>4.1 (22)</span></div>
+            <p class="tarjeta__precio">$599</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="xbox" data-categoria="juegos" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p12.jpg" alt="Forza Horizon 5" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Xbox · Nuevo</span>
+            <h3 class="tarjeta__nombre">Forza Horizon 5</h3>
+            <div class="estrellas" aria-label="Calificación 4.6 de 5"><div class="estrellas__barra"><span style="width:92%"></span></div><span>4.6 (59)</span></div>
+            <p class="tarjeta__precio">$899</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="juegos" data-precio="bajo" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p13.jpg" alt="Minecraft" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Minecraft</h3>
+            <div class="estrellas" aria-label="Calificación 4.8 de 5"><div class="estrellas__barra"><span style="width:96%"></span></div><span>4.8 (140)</span></div>
+            <p class="tarjeta__precio">$699</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="multi" data-categoria="accesorios" data-precio="alto" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p14.jpg" alt="Audífonos gamer inalámbricos" loading="lazy" width="600" height="600">
+            <span class="insignia">Oferta</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Multiplataforma · Nuevo</span>
+            <h3 class="tarjeta__nombre">Audífonos gamer inalámbricos</h3>
+            <div class="estrellas" aria-label="Calificación 4.4 de 5"><div class="estrellas__barra"><span style="width:88%"></span></div><span>4.4 (77)</span></div>
+            <p class="tarjeta__precio">$1,899 <small><del>$2,199</del></small></p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="multi" data-categoria="accesorios" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p15.jpg" alt="Teclado mecánico RGB" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PC · Nuevo</span>
+            <h3 class="tarjeta__nombre">Teclado mecánico RGB</h3>
+            <div class="estrellas" aria-label="Calificación 4.5 de 5"><div class="estrellas__barra"><span style="width:90%"></span></div><span>4.5 (45)</span></div>
+            <p class="tarjeta__precio">$1,299</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="multi" data-categoria="accesorios" data-precio="bajo" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p16.jpg" alt="Mouse gamer 16 000 DPI" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PC · Nuevo</span>
+            <h3 class="tarjeta__nombre">Mouse gamer 16 000 DPI</h3>
+            <div class="estrellas" aria-label="Calificación 4.3 de 5"><div class="estrellas__barra"><span style="width:86%"></span></div><span>4.3 (38)</span></div>
+            <p class="tarjeta__precio">$699</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="accesorios" data-precio="bajo" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p17.jpg" alt="Base de carga doble para DualSense" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Nuevo</span>
+            <h3 class="tarjeta__nombre">Base de carga doble para DualSense</h3>
+            <div class="estrellas" aria-label="Calificación 4.4 de 5"><div class="estrellas__barra"><span style="width:88%"></span></div><span>4.4 (52)</span></div>
+            <p class="tarjeta__precio">$549</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="switch" data-categoria="accesorios" data-precio="bajo" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p18.jpg" alt="Estuche de transporte para Switch" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Switch · Nuevo</span>
+            <h3 class="tarjeta__nombre">Estuche de transporte para Switch</h3>
+            <div class="estrellas" aria-label="Calificación 4.6 de 5"><div class="estrellas__barra"><span style="width:92%"></span></div><span>4.6 (66)</span></div>
+            <p class="tarjeta__precio">$399</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="multi" data-categoria="coleccionables" data-precio="medio" data-estado="nuevo">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p19.jpg" alt="Figura coleccionable edición limitada" loading="lazy" width="600" height="600">
+            
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">Coleccionable · Nuevo</span>
+            <h3 class="tarjeta__nombre">Figura coleccionable edición limitada</h3>
+            <div class="estrellas" aria-label="Calificación 4.7 de 5"><div class="estrellas__barra"><span style="width:94%"></span></div><span>4.7 (19)</span></div>
+            <p class="tarjeta__precio">$899</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+        <article class="tarjeta" data-plataforma="ps5" data-categoria="juegos" data-precio="bajo" data-estado="usado">
+          <a class="tarjeta__foto" href="producto.html">
+            <img src="assets/img/productos/p20.jpg" alt="The Last of Us Part I" loading="lazy" width="600" height="600">
+            <span class="insignia insignia--usado">Seminuevo</span>
+          </a>
+          <div class="tarjeta__cuerpo">
+            <span class="tarjeta__plataforma">PS5 · Usado</span>
+            <h3 class="tarjeta__nombre">The Last of Us Part I</h3>
+            <div class="estrellas" aria-label="Calificación 4.8 de 5"><div class="estrellas__barra"><span style="width:96%"></span></div><span>4.8 (34)</span></div>
+            <p class="tarjeta__precio">$649</p>
+            <div class="tarjeta__botones">
+              <a class="btn btn--borde" href="producto.html">Ver</a>
+              <a class="btn btn--primario" href="carrito.html"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""> Agregar</a>
+            </div>
+          </div>
+        </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__rejilla">
+        <div>
+          <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="GameZone GDL" width="260" height="64"></a>
+          <p style="font-size:.92rem">Tu tienda de videojuegos, consolas y accesorios en Guadalajara. Nuevos y seminuevos, con garantía.</p>
+          <div style="margin-top:1rem"><div class="redes"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Facebook"><img class="icono" src="assets/icons/blanco/red-facebook.svg" alt=""> Facebook</a><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Instagram"><img class="icono" src="assets/icons/blanco/red-instagram.svg" alt=""> Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en TikTok"><img class="icono" src="assets/icons/blanco/red-tiktok.svg" alt=""> TikTok</a><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en YouTube"><img class="icono" src="assets/icons/blanco/red-youtube.svg" alt=""> YouTube</a><a href="https://wa.me/523312345678" target="_blank" rel="noopener" aria-label="GameZone GDL en WhatsApp"><img class="icono" src="assets/icons/blanco/red-whatsapp.svg" alt=""> WhatsApp</a></div></div>
+        </div>
+        <div>
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="tienda.html">Catálogo completo</a></li>
+            <li><a href="tienda.html">Consolas</a></li>
+            <li><a href="tienda.html">Videojuegos</a></li>
+            <li><a href="tienda.html">Accesorios</a></li>
+            <li><a href="carrito.html">Mi carrito</a></li>
+            <li><a href="login.html">Mi cuenta</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+            <li><a href="nosotros.html#mision">Misión y visión</a></li>
+            <li><a href="nosotros.html#politicas">Políticas de calidad</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="aviso-privacidad.html">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p class="pie__dato"><img src="assets/icons/blanco/ubicacion.svg" alt="">Av. Manuel Ávila Camacho 2150, local 24, Guadalajara, Jal.</p>
+          <p class="pie__dato"><img src="assets/icons/blanco/telefono.svg" alt="">33 1234 5678</p>
+          <p class="pie__dato"><img src="assets/icons/blanco/correo.svg" alt="">contacto@gamezonegdl.mx</p>
+          <form class="boletin" action="gracias.html" method="get">
+            <label class="solo-lectores" for="boletin">Correo para el boletín</label>
+            <input id="boletin" type="email" name="boletin" placeholder="Tu correo" required>
+            <button class="btn btn--ambar btn--chico" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <span>© 2026 GameZone GDL. Prototipo académico — Proyecto III, Equipo X (UDG+).</span>
+        <span><a href="aviso-privacidad.html">Aviso de privacidad</a> · <a href="preguntas-frecuentes.html">Ayuda</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- Chat de atención (simulado solo con HTML y CSS) -->
+  <div class="chat">
+    <input class="chat-check" type="checkbox" id="chat">
+    <label class="chat-boton" for="chat" aria-label="Abrir chat de atención">
+      <img class="icono abrir-chat" src="assets/icons/blanco/chat.svg" alt=""><img class="icono cerrar-chat" src="assets/icons/blanco/cerrar.svg" alt="">
+    </label>
+    <section class="chat-ventana" aria-label="Chat con GameZone GDL">
+      <div class="chat-cabeza">
+        <span class="chat-avatar"><img class="icono" src="assets/icons/blanco/control.svg" alt=""></span>
+        <div><strong>Asistente GameZone</strong><small>En línea</small></div>
+      </div>
+      <div class="chat-mensajes">
+        <p class="msj msj--bot">¡Hola! 👋 Soy el asistente de GameZone GDL. ¿En qué te puedo ayudar?</p>
+        <p class="msj msj--yo q1">¿Puedo apartar un juego?</p>
+        <p class="msj msj--bot msj--resp q1">¡Claro! Agrégalo al carrito y elige «Recoger en tienda». Te lo guardamos 48 horas.</p>
+        <p class="msj msj--yo q2">¿Cuál es su horario?</p>
+        <p class="msj msj--bot msj--resp q2">Lunes a sábado de 11:00 a 21:00 y domingo de 12:00 a 19:00.</p>
+        <p class="msj msj--yo q3">¿Hacen envíos?</p>
+        <p class="msj msj--bot msj--resp q3">Sí, a toda la ZMG en 24 a 48 horas. Es gratis en compras mayores a $999.</p>
+        <p class="msj msj--yo q4">Quiero hablar con un asesor</p>
+        <p class="msj msj--bot msj--resp q4">Con gusto. Un asesor te atenderá en breve o escríbenos por <a href="https://wa.me/523312345678" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      </div>
+      <div class="chat-opciones">
+        <input type="checkbox" id="q1"><label for="q1">Apartados</label>
+        <input type="checkbox" id="q2"><label for="q2">Horario</label>
+        <input type="checkbox" id="q3"><label for="q3">Envíos</label>
+        <input type="checkbox" id="q4"><label for="q4">Asesor</label>
+      </div>
+      <div class="chat-escribir">
+        <label class="solo-lectores" for="chat-texto">Escribe tu mensaje</label>
+        <input id="chat-texto" type="text" placeholder="Escribe tu mensaje…">
+        <button type="button" aria-label="Enviar mensaje"><img class="icono" src="assets/icons/blanco/enviar.svg" alt=""></button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

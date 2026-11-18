@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario y precios | GameZone GDL</title>
+  <meta name="description" content="Actualización de existencias y precios.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header class="encabezado encabezado--admin">
+    <div class="contenedor encabezado__fila">
+      <a class="logo" href="admin.html"><img src="assets/img/logo.svg" alt="GameZone GDL — panel administrativo" width="260" height="64"></a>
+      <span class="etiqueta" style="margin:0">Panel administrativo</span>
+      <div class="acciones" style="margin-left:auto;color:#e5e1ff;font-weight:600;font-size:.9rem;gap:.8rem">
+        <span>Gerente</span>
+        <a href="login.html" aria-label="Cerrar sesión" title="Cerrar sesión"><img class="icono" src="assets/icons/blanco/salir.svg" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="portada-pagina">
+      <div class="contenedor"><p class="migas">Panel administrativo / Inventario y precios</p><h1>Inventario y precios</h1><p>Actualiza existencias y precios; los cambios se reflejan de inmediato en la tienda.</p></div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor panel-cuenta">
+        <nav aria-label="Menú del panel"><ul class="menu-lateral"><li><a href="admin.html"><img class="icono" src="assets/icons/grafica.svg" alt="">Dashboard</a></li><li><a href="admin-productos.html"><img class="icono" src="assets/icons/caja.svg" alt="">Productos</a></li><li><a class="activo" href="admin-inventario.html"><img class="icono" src="assets/icons/editar.svg" alt="">Inventario y precios</a></li><li><a href="admin-alertas.html"><img class="icono" src="assets/icons/alerta.svg" alt="">Alertas de existencias</a></li><li><a href="index.html"><img class="icono" src="assets/icons/tienda.svg" alt="">Ver tienda</a></li><li><a href="login.html"><img class="icono" src="assets/icons/salir.svg" alt="">Cerrar sesión</a></li></ul></nav>
+        <div>
+          <form action="admin-inventario.html" method="get">
+            <table class="tabla tabla--responsiva">
+              <thead><tr><th>Producto</th><th>Plataforma</th><th>Existencias</th><th>Precio</th><th>Estado</th><th>Última actualización</th></tr></thead>
+              <tbody>
+              <tr><td data-etiqueta="Producto">Consola PlayStation 5 Slim 1 TB</td><td data-etiqueta="Plataforma">PS5</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p01">Existencias de Consola PlayStation 5 Slim 1 TB</label><input class="celda" id="st-p01" type="number" min="0" value="4"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p01">Precio de Consola PlayStation 5 Slim 1 TB</label><input class="celda" id="pr-p01" type="number" min="1" value="9999"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Consola Xbox Series S 512 GB</td><td data-etiqueta="Plataforma">Xbox</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p02">Existencias de Consola Xbox Series S 512 GB</label><input class="celda" id="st-p02" type="number" min="0" value="6"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p02">Precio de Consola Xbox Series S 512 GB</label><input class="celda" id="pr-p02" type="number" min="1" value="6499"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Consola Nintendo Switch OLED</td><td data-etiqueta="Plataforma">Switch</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p03">Existencias de Consola Nintendo Switch OLED</label><input class="celda" id="st-p03" type="number" min="0" value="5"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p03">Precio de Consola Nintendo Switch OLED</label><input class="celda" id="pr-p03" type="number" min="1" value="7299"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Control inalámbrico DualSense blanco</td><td data-etiqueta="Plataforma">PS5</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p04">Existencias de Control inalámbrico DualSense blanco</label><input class="celda" id="st-p04" type="number" min="0" value="12"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p04">Precio de Control inalámbrico DualSense blanco</label><input class="celda" id="pr-p04" type="number" min="1" value="1499"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Control inalámbrico para Xbox</td><td data-etiqueta="Plataforma">Xbox</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p05">Existencias de Control inalámbrico para Xbox</label><input class="celda" id="st-p05" type="number" min="0" value="9"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p05">Precio de Control inalámbrico para Xbox</label><input class="celda" id="pr-p05" type="number" min="1" value="1299"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Joy-Con (par) neón</td><td data-etiqueta="Plataforma">Switch</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p06">Existencias de Joy-Con (par) neón</label><input class="celda" id="st-p06" type="number" min="0" value="0"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p06">Precio de Joy-Con (par) neón</label><input class="celda" id="pr-p06" type="number" min="1" value="1599"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--bajo">Agotado</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">EA Sports FC 25</td><td data-etiqueta="Plataforma">PS5</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p07">Existencias de EA Sports FC 25</label><input class="celda" id="st-p07" type="number" min="0" value="8"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p07">Precio de EA Sports FC 25</label><input class="celda" id="pr-p07" type="number" min="1" value="1199"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Marvel&#x27;s Spider-Man 2</td><td data-etiqueta="Plataforma">PS5</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p08">Existencias de Marvel&#x27;s Spider-Man 2</label><input class="celda" id="st-p08" type="number" min="0" value="7"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p08">Precio de Marvel&#x27;s Spider-Man 2</label><input class="celda" id="pr-p08" type="number" min="1" value="1099"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Mario Kart 8 Deluxe</td><td data-etiqueta="Plataforma">Switch</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p09">Existencias de Mario Kart 8 Deluxe</label><input class="celda" id="st-p09" type="number" min="0" value="10"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p09">Precio de Mario Kart 8 Deluxe</label><input class="celda" id="pr-p09" type="number" min="1" value="1149"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Zelda: Tears of the Kingdom</td><td data-etiqueta="Plataforma">Switch</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p10">Existencias de Zelda: Tears of the Kingdom</label><input class="celda" id="st-p10" type="number" min="0" value="3"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p10">Precio de Zelda: Tears of the Kingdom</label><input class="celda" id="pr-p10" type="number" min="1" value="1399"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Halo Infinite</td><td data-etiqueta="Plataforma">Xbox</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p11">Existencias de Halo Infinite</label><input class="celda" id="st-p11" type="number" min="0" value="2"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p11">Precio de Halo Infinite</label><input class="celda" id="pr-p11" type="number" min="1" value="599"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--proceso">Bajo</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Forza Horizon 5</td><td data-etiqueta="Plataforma">Xbox</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p12">Existencias de Forza Horizon 5</label><input class="celda" id="st-p12" type="number" min="0" value="6"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p12">Precio de Forza Horizon 5</label><input class="celda" id="pr-p12" type="number" min="1" value="899"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Minecraft</td><td data-etiqueta="Plataforma">Switch</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p13">Existencias de Minecraft</label><input class="celda" id="st-p13" type="number" min="0" value="11"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p13">Precio de Minecraft</label><input class="celda" id="pr-p13" type="number" min="1" value="699"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Audífonos gamer inalámbricos</td><td data-etiqueta="Plataforma">Multiplataforma</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p14">Existencias de Audífonos gamer inalámbricos</label><input class="celda" id="st-p14" type="number" min="0" value="5"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p14">Precio de Audífonos gamer inalámbricos</label><input class="celda" id="pr-p14" type="number" min="1" value="1899"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Teclado mecánico RGB</td><td data-etiqueta="Plataforma">PC</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p15">Existencias de Teclado mecánico RGB</label><input class="celda" id="st-p15" type="number" min="0" value="7"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p15">Precio de Teclado mecánico RGB</label><input class="celda" id="pr-p15" type="number" min="1" value="1299"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Mouse gamer 16 000 DPI</td><td data-etiqueta="Plataforma">PC</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p16">Existencias de Mouse gamer 16 000 DPI</label><input class="celda" id="st-p16" type="number" min="0" value="14"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p16">Precio de Mouse gamer 16 000 DPI</label><input class="celda" id="pr-p16" type="number" min="1" value="699"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Base de carga doble para DualSense</td><td data-etiqueta="Plataforma">PS5</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p17">Existencias de Base de carga doble para DualSense</label><input class="celda" id="st-p17" type="number" min="0" value="2"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p17">Precio de Base de carga doble para DualSense</label><input class="celda" id="pr-p17" type="number" min="1" value="549"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--proceso">Bajo</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Estuche de transporte para Switch</td><td data-etiqueta="Plataforma">Switch</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p18">Existencias de Estuche de transporte para Switch</label><input class="celda" id="st-p18" type="number" min="0" value="15"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p18">Precio de Estuche de transporte para Switch</label><input class="celda" id="pr-p18" type="number" min="1" value="399"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">Figura coleccionable edición limitada</td><td data-etiqueta="Plataforma">Coleccionable</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p19">Existencias de Figura coleccionable edición limitada</label><input class="celda" id="st-p19" type="number" min="0" value="3"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p19">Precio de Figura coleccionable edición limitada</label><input class="celda" id="pr-p19" type="number" min="1" value="899"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--ok">Disponible</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              <tr><td data-etiqueta="Producto">The Last of Us Part I</td><td data-etiqueta="Plataforma">PS5</td>
+              <td data-etiqueta="Existencias"><label class="solo-lectores" for="st-p20">Existencias de The Last of Us Part I</label><input class="celda" id="st-p20" type="number" min="0" value="1"></td>
+              <td data-etiqueta="Precio"><label class="solo-lectores" for="pr-p20">Precio de The Last of Us Part I</label><input class="celda" id="pr-p20" type="number" min="1" value="649"></td>
+              <td data-etiqueta="Estado"><span class="estado estado--proceso">Bajo</span></td><td data-etiqueta="Actualizado">15/11/2026</td></tr>
+              </tbody>
+            </table>
+            <div style="display:flex;gap:.8rem;margin-top:1.2rem;flex-wrap:wrap">
+              <button class="btn btn--primario" type="submit">Guardar cambios</button>
+              <button class="btn btn--borde" type="reset">Descartar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

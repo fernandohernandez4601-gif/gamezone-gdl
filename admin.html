@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard administrativo | GameZone GDL</title>
+  <meta name="description" content="Panel administrativo de GameZone GDL.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <header class="encabezado encabezado--admin">
+    <div class="contenedor encabezado__fila">
+      <a class="logo" href="admin.html"><img src="assets/img/logo.svg" alt="GameZone GDL — panel administrativo" width="260" height="64"></a>
+      <span class="etiqueta" style="margin:0">Panel administrativo</span>
+      <div class="acciones" style="margin-left:auto;color:#e5e1ff;font-weight:600;font-size:.9rem;gap:.8rem">
+        <span>Gerente</span>
+        <a href="login.html" aria-label="Cerrar sesión" title="Cerrar sesión"><img class="icono" src="assets/icons/blanco/salir.svg" alt=""></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="portada-pagina">
+      <div class="contenedor"><p class="migas">Panel administrativo</p><h1>Dashboard</h1><p>Bienvenido, Gerente. Resumen del estado de la tienda.</p></div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor panel-cuenta">
+        <nav aria-label="Menú del panel"><ul class="menu-lateral"><li><a class="activo" href="admin.html"><img class="icono" src="assets/icons/grafica.svg" alt="">Dashboard</a></li><li><a href="admin-productos.html"><img class="icono" src="assets/icons/caja.svg" alt="">Productos</a></li><li><a href="admin-inventario.html"><img class="icono" src="assets/icons/editar.svg" alt="">Inventario y precios</a></li><li><a href="admin-alertas.html"><img class="icono" src="assets/icons/alerta.svg" alt="">Alertas de existencias</a></li><li><a href="index.html"><img class="icono" src="assets/icons/tienda.svg" alt="">Ver tienda</a></li><li><a href="login.html"><img class="icono" src="assets/icons/salir.svg" alt="">Cerrar sesión</a></li></ul></nav>
+        <div>
+          <div class="admin-kpis">
+            <div class="kpi"><img class="icono icono--grande" src="assets/icons/caja.svg" alt=""><div><strong>20</strong><span>Productos activos</span></div></div>
+            <div class="kpi"><img class="icono icono--grande" src="assets/icons/carrito.svg" alt=""><div><strong>6</strong><span>Pedidos del día</span></div></div>
+            <div class="kpi"><img class="icono icono--grande" src="assets/icons/cerrar.svg" alt=""><div><strong>1</strong><span>Productos agotados</span></div></div>
+            <a class="kpi" href="admin-alertas.html" style="color:inherit;text-decoration:none"><img class="icono icono--grande" src="assets/icons/alerta.svg" alt=""><div><strong>4</strong><span>Existencias bajas →</span></div></a>
+          </div>
+          <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-bottom:1.5rem">
+            <a class="btn btn--primario" href="admin-producto.html"><img class="icono" src="assets/icons/blanco/mas.svg" alt=""> Nuevo producto</a>
+            <a class="btn btn--borde" href="admin-inventario.html">Actualizar inventario</a>
+          </div>
+          <h2>Últimos pedidos</h2>
+          <table class="tabla tabla--responsiva">
+            <thead><tr><th>Folio</th><th>Cliente</th><th>Total</th><th>Estado</th></tr></thead>
+            <tbody>
+              <tr><td data-etiqueta="Folio"><strong>#GZ-2026-00128</strong></td><td data-etiqueta="Cliente">Ana Ramírez</td><td data-etiqueta="Total">$11,446</td><td data-etiqueta="Estado"><span class="estado estado--proceso">En preparación</span></td></tr>
+              <tr><td data-etiqueta="Folio"><strong>#GZ-2026-00127</strong></td><td data-etiqueta="Cliente">Luis Medina</td><td data-etiqueta="Total">$1,099</td><td data-etiqueta="Estado"><span class="estado estado--proceso">Por recoger</span></td></tr>
+              <tr><td data-etiqueta="Folio"><strong>#GZ-2026-00126</strong></td><td data-etiqueta="Cliente">Karla Pérez</td><td data-etiqueta="Total">$2,198</td><td data-etiqueta="Estado"><span class="estado estado--ok">Entregado</span></td></tr>
+              <tr><td data-etiqueta="Folio"><strong>#GZ-2026-00125</strong></td><td data-etiqueta="Cliente">Diego Hernández</td><td data-etiqueta="Total">$649</td><td data-etiqueta="Estado"><span class="estado estado--ok">Entregado</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

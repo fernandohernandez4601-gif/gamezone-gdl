@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto | GameZone GDL</title>
+  <meta name="description" content="Formulario de contacto y redes sociales.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <p class="barra-aviso">Envío gratis en compras mayores a $999 en la ZMG · Aparta en línea y recoge en tienda</p>
+  <header class="encabezado">
+    <div class="contenedor encabezado__fila">
+      <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="GameZone GDL — inicio" width="260" height="64"></a>
+      <input class="menu-check" type="checkbox" id="menu">
+      <label class="menu-boton" for="menu" aria-label="Abrir menú">
+        <img class="icono abrir" src="assets/icons/blanco/menu.svg" alt=""><img class="icono cerrar" src="assets/icons/blanco/cerrar.svg" alt="">
+      </label>
+      <nav class="nav" aria-label="Menú principal"><a href="index.html">Inicio</a><a href="tienda.html">Tienda</a><a href="nosotros.html">Nosotros</a><a href="ubicacion.html">Ubicación</a><a href="preguntas-frecuentes.html">Preguntas frecuentes</a><a href="contacto.html" class="activo" aria-current="page">Contacto</a></nav>
+      <div class="acciones">
+        <a href="tienda.html#buscar" aria-label="Buscar"><img class="icono" src="assets/icons/blanco/buscar.svg" alt=""></a>
+        <a href="login.html" aria-label="Mi cuenta"><img class="icono" src="assets/icons/blanco/usuario.svg" alt=""></a>
+        <a href="carrito.html" aria-label="Carrito, 4 productos, subtotal $11,446"><img class="icono" src="assets/icons/blanco/carrito.svg" alt=""><span class="contador">4</span></a>
+        <span class="subtotal-cab">$11,446</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="portada-pagina">
+      <div class="contenedor">
+        <p class="migas"><a href="index.html">Inicio</a> / Contacto</p>
+        <h1>Contáctanos</h1>
+        <p>¿Tienes una duda, sugerencia o quieres cotizar un producto? Escríbenos.</p>
+      </div>
+    </section>
+    <section class="seccion">
+      <div class="contenedor dos-columnas" style="align-items:start">
+        <form class="formulario" action="gracias.html" method="get">
+          <h2>Formulario de contacto</h2>
+          <div class="campos-2" style="margin-top:1rem">
+            <div class="campo"><label for="cnom">Nombre *</label><input id="cnom" name="nombre" required autocomplete="name"></div>
+            <div class="campo"><label for="ctel">Teléfono</label><input id="ctel" name="telefono" type="tel" pattern="[0-9 ]{10,14}" autocomplete="tel"></div>
+          </div>
+          <div class="campo"><label for="ccor">Correo electrónico *</label><input id="ccor" name="correo" type="email" required autocomplete="email"></div>
+          <div class="campo"><label for="cmot">Motivo *</label>
+            <select id="cmot" name="motivo" required>
+              <option value="">Selecciona una opción</option><option>Duda sobre un producto</option><option>Estado de mi pedido</option>
+              <option>Garantía o devolución</option><option>Cotización o mayoreo</option><option>Sugerencia</option>
+            </select></div>
+          <div class="campo"><label for="cmsj">Mensaje *</label><textarea id="cmsj" name="mensaje" rows="5" required minlength="10"></textarea></div>
+          <div class="casilla"><input type="checkbox" id="cav" required><label for="cav">Acepto el <a href="aviso-privacidad.html">aviso de privacidad</a>.</label></div>
+          <button class="btn btn--primario btn--bloque" type="submit"><img class="icono" src="assets/icons/blanco/enviar.svg" alt=""> Enviar mensaje</button>
+        </form>
+        <div>
+          <div class="info">
+            <h3 style="margin-top:0">Otros medios de contacto</h3>
+            <p class="pie__dato" style="color:var(--texto)"><img src="assets/icons/telefono.svg" alt="">33 1234 5678</p>
+            <p class="pie__dato" style="color:var(--texto)"><img src="assets/icons/red-whatsapp.svg" alt="">WhatsApp: 33 1234 5678</p>
+            <p class="pie__dato" style="color:var(--texto)"><img src="assets/icons/correo.svg" alt="">contacto@gamezonegdl.mx</p>
+            <p class="pie__dato" style="color:var(--texto)"><img src="assets/icons/ubicacion.svg" alt=""><a href="ubicacion.html">Ver ubicación y horario</a></p>
+          </div>
+          <div class="info" style="margin-top:1.2rem">
+            <h3 style="margin-top:0">Síguenos en redes sociales</h3>
+            <p style="margin-bottom:1rem">Entérate de lanzamientos, torneos y promociones.</p>
+            <div class="redes redes--claras"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Facebook"><img class="icono" src="assets/icons/red-facebook.svg" alt=""> Facebook</a><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Instagram"><img class="icono" src="assets/icons/red-instagram.svg" alt=""> Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en TikTok"><img class="icono" src="assets/icons/red-tiktok.svg" alt=""> TikTok</a><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en YouTube"><img class="icono" src="assets/icons/red-youtube.svg" alt=""> YouTube</a><a href="https://wa.me/523312345678" target="_blank" rel="noopener" aria-label="GameZone GDL en WhatsApp"><img class="icono" src="assets/icons/red-whatsapp.svg" alt=""> WhatsApp</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__rejilla">
+        <div>
+          <a class="logo" href="index.html"><img src="assets/img/logo.svg" alt="GameZone GDL" width="260" height="64"></a>
+          <p style="font-size:.92rem">Tu tienda de videojuegos, consolas y accesorios en Guadalajara. Nuevos y seminuevos, con garantía.</p>
+          <div style="margin-top:1rem"><div class="redes"><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Facebook"><img class="icono" src="assets/icons/blanco/red-facebook.svg" alt=""> Facebook</a><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en Instagram"><img class="icono" src="assets/icons/blanco/red-instagram.svg" alt=""> Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en TikTok"><img class="icono" src="assets/icons/blanco/red-tiktok.svg" alt=""> TikTok</a><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="GameZone GDL en YouTube"><img class="icono" src="assets/icons/blanco/red-youtube.svg" alt=""> YouTube</a><a href="https://wa.me/523312345678" target="_blank" rel="noopener" aria-label="GameZone GDL en WhatsApp"><img class="icono" src="assets/icons/blanco/red-whatsapp.svg" alt=""> WhatsApp</a></div></div>
+        </div>
+        <div>
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="tienda.html">Catálogo completo</a></li>
+            <li><a href="tienda.html">Consolas</a></li>
+            <li><a href="tienda.html">Videojuegos</a></li>
+            <li><a href="tienda.html">Accesorios</a></li>
+            <li><a href="carrito.html">Mi carrito</a></li>
+            <li><a href="login.html">Mi cuenta</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+            <li><a href="nosotros.html#mision">Misión y visión</a></li>
+            <li><a href="nosotros.html#politicas">Políticas de calidad</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+            <li><a href="aviso-privacidad.html">Aviso de privacidad</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p class="pie__dato"><img src="assets/icons/blanco/ubicacion.svg" alt="">Av. Manuel Ávila Camacho 2150, local 24, Guadalajara, Jal.</p>
+          <p class="pie__dato"><img src="assets/icons/blanco/telefono.svg" alt="">33 1234 5678</p>
+          <p class="pie__dato"><img src="assets/icons/blanco/correo.svg" alt="">contacto@gamezonegdl.mx</p>
+          <form class="boletin" action="gracias.html" method="get">
+            <label class="solo-lectores" for="boletin">Correo para el boletín</label>
+            <input id="boletin" type="email" name="boletin" placeholder="Tu correo" required>
+            <button class="btn btn--ambar btn--chico" type="submit">Suscribirme</button>
+          </form>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <span>© 2026 GameZone GDL. Prototipo académico — Proyecto III, Equipo X (UDG+).</span>
+        <span><a href="aviso-privacidad.html">Aviso de privacidad</a> · <a href="preguntas-frecuentes.html">Ayuda</a></span>
+      </div>
+    </div>
+  </footer>
+  <!-- Chat de atención (simulado solo con HTML y CSS) -->
+  <div class="chat">
+    <input class="chat-check" type="checkbox" id="chat">
+    <label class="chat-boton" for="chat" aria-label="Abrir chat de atención">
+      <img class="icono abrir-chat" src="assets/icons/blanco/chat.svg" alt=""><img class="icono cerrar-chat" src="assets/icons/blanco/cerrar.svg" alt="">
+    </label>
+    <section class="chat-ventana" aria-label="Chat con GameZone GDL">
+      <div class="chat-cabeza">
+        <span class="chat-avatar"><img class="icono" src="assets/icons/blanco/control.svg" alt=""></span>
+        <div><strong>Asistente GameZone</strong><small>En línea</small></div>
+      </div>
+      <div class="chat-mensajes">
+        <p class="msj msj--bot">¡Hola! 👋 Soy el asistente de GameZone GDL. ¿En qué te puedo ayudar?</p>
+        <p class="msj msj--yo q1">¿Puedo apartar un juego?</p>
+        <p class="msj msj--bot msj--resp q1">¡Claro! Agrégalo al carrito y elige «Recoger en tienda». Te lo guardamos 48 horas.</p>
+        <p class="msj msj--yo q2">¿Cuál es su horario?</p>
+        <p class="msj msj--bot msj--resp q2">Lunes a sábado de 11:00 a 21:00 y domingo de 12:00 a 19:00.</p>
+        <p class="msj msj--yo q3">¿Hacen envíos?</p>
+        <p class="msj msj--bot msj--resp q3">Sí, a toda la ZMG en 24 a 48 horas. Es gratis en compras mayores a $999.</p>
+        <p class="msj msj--yo q4">Quiero hablar con un asesor</p>
+        <p class="msj msj--bot msj--resp q4">Con gusto. Un asesor te atenderá en breve o escríbenos por <a href="https://wa.me/523312345678" target="_blank" rel="noopener">WhatsApp</a>.</p>
+      </div>
+      <div class="chat-opciones">
+        <input type="checkbox" id="q1"><label for="q1">Apartados</label>
+        <input type="checkbox" id="q2"><label for="q2">Horario</label>
+        <input type="checkbox" id="q3"><label for="q3">Envíos</label>
+        <input type="checkbox" id="q4"><label for="q4">Asesor</label>
+      </div>
+      <div class="chat-escribir">
+        <label class="solo-lectores" for="chat-texto">Escribe tu mensaje</label>
+        <input id="chat-texto" type="text" placeholder="Escribe tu mensaje…">
+        <button type="button" aria-label="Enviar mensaje"><img class="icono" src="assets/icons/blanco/enviar.svg" alt=""></button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
