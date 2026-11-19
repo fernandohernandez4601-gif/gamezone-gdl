@@ -538,3 +538,20 @@ p + p { margin-top: .8rem; }
 }
 .pie__rejilla > *, .dos-columnas > *, .tienda > *, .carrito > *, .panel-cuenta > * { min-width: 0; }
 @media (max-width: 560px) { .pie__rejilla { grid-template-columns: minmax(0, 1fr); } }
+
+/* Slide tipo banner: la imagen ya trae su texto, solo se muestra el botón */
+.slide--banner { background: #210e46; }
+.slide--banner img { object-position: center bottom; }
+.slide__texto--solo-boton {
+  background: none; justify-content: flex-end; padding: 0 7% 5.2rem;
+}
+.slide__texto--solo-boton .btn { align-self: flex-end; box-shadow: 0 8px 24px rgba(0, 0, 0, .35); }
+@media (max-width: 860px) {
+  .slide--banner img { object-fit: contain; }
+  .slide__texto--solo-boton { background: none; padding: 0 1rem 2.6rem; }
+  .slide__texto--solo-boton .btn { align-self: center; }
+}
+@media (min-width: 1500px) {
+  .slide--banner img { object-fit: contain; object-position: center; }
+  .slide__texto--solo-boton { padding-right: calc((100% - 1016px) / 2 + 2.5rem); }
+}
